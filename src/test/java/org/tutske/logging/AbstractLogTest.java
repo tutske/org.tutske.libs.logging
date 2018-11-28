@@ -19,12 +19,20 @@ public abstract class AbstractLogTest {
 	}
 
 	protected LogEvent verifyEvent () {
+		return verifyEvent (fn);
+	}
+
+	protected LogEvent verifyEvent (LogFunction fn) {
 		ArgumentCaptor<LogEvent> captor = ArgumentCaptor.forClass (LogEvent.class);
 		verify (fn).accept (captor.capture ());
 		return captor.getValue ();
 	}
 
 	protected List<LogEvent> verifyEvents (int amount) {
+		return verifyEvents (fn, amount);
+	}
+
+	protected List<LogEvent> verifyEvents (LogFunction fn, int amount) {
 		ArgumentCaptor<LogEvent> captor = ArgumentCaptor.forClass (LogEvent.class);
 		verify (fn, times (amount)).accept (captor.capture ());
 		return captor.getAllValues ();

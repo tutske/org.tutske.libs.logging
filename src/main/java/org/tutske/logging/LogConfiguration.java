@@ -24,4 +24,10 @@ public interface LogConfiguration {
 	LogConfiguration register (Set<Marker> marker, String prefix, LogFunction fn);
 	LogConfiguration register (Level level, String prefix, LogFunction fn);
 
+	LogConfiguration capture (LogFunction fn);
+	LogConfiguration capture (String prefix, LogFunction fn);
+	LogConfiguration capture (Marker marker, String prefix, LogFunction fn);
+	LogConfiguration capture (Set<Marker> marker, String prefix, LogFunction fn);
+	LogConfiguration capture (Level level, String prefix, LogFunction fn);
+
 }
