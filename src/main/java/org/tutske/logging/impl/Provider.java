@@ -8,7 +8,6 @@ import org.slf4j.spi.MDCAdapter;
 import org.slf4j.spi.SLF4JServiceProvider;
 
 
-
 public class Provider implements SLF4JServiceProvider {
 
 	private ILoggerFactory loggers;

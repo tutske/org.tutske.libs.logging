@@ -1,6 +1,5 @@
 package org.tutske.logging;
 
-import org.slf4j.MDC;
 import org.slf4j.Marker;
 import org.slf4j.event.Level;
 import org.slf4j.helpers.MessageFormatter;

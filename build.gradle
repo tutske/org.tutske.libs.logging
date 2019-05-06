@@ -1,16 +1,16 @@
 plugins {
-	id "org.tutske.gradle" version 'a.1.1'
+	id "org.tutske.gradle" version 'a.2.2'
 }
 
 group = 'org.tutske.libs'
 
 dependencies {
-	compile (
+	implementation (
 		[ group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '[1,)' ],
 		[ group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: '[1,)' ],
 		[ group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '[1,)' ],
 		[ group: 'org.slf4j', name: 'slf4j-api', version: '[1,)' ],
-		[ group: 'org.tutske.libs', name: 'ts-libs-utils', version: '[a.1,)' ]
+		[ group: 'org.tutske.libs', name: 'org.tutske.libs.utils', version: '[a.3,)' ]
 	)
 	testCompile (
 		[ group: 'junit', name: 'junit', version: '[1,)' ],

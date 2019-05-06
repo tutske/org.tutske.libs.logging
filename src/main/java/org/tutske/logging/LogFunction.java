@@ -1,6 +1,6 @@
 package org.tutske.logging;
 
-import org.tutske.utils.functions.RiskyConsumer;
+import org.tutske.lib.utils.Functions.RiskyConsumer;
 
 
 @FunctionalInterface
